@@ -6,7 +6,16 @@ Convert travel expenses into a base currency using exchange rates and conversion
 3. Calculate total spending.
 4. Find the largest expense category.
 5. Compare spending with the budget and display results.
-6. 5. Sample Input
+6. 3. Flowchart:(Mermaid):
+flowchart TD
+A([Start]) --> B[/Input costs and target/]
+B --> C[Calculate total cost and profit]
+C --> D{Profit >= Target?}
+D -- Yes --> E[/Target Achieved/]
+D -- No --> F[/Target Not Achieved/]
+E --> G([End])
+F --> G
+7. 5. Sample Input
 Budget: 10000
 Exchange rate: 80
 Fee percentage: 2
